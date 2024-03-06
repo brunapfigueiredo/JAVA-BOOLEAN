@@ -17,7 +17,7 @@ public class admescolar { //abstração
         alunos aluno4 = new alunos("Sophia Chicarelli");
         alunos aluno5 = new alunos("Breno Alves");
         
-        //determinando quais alunos trancaram o curso
+        //determinando quais alunos trancaram o curso.
         aluno3.setCursotrancado(true);
         aluno5.setCursotrancado(true);
         
@@ -33,6 +33,7 @@ public class admescolar { //abstração
         professores professor1 = new professores("Wagner");
         professores professor2 = new professores("Ediney");
         professores professor3 = new professores("Colevati");
+        professores professor4 = new professores("Paulo");
         
         //determinando qual professor está fora de serviço
         professor3.setEstadodeservico(true);
@@ -40,7 +41,8 @@ public class admescolar { //abstração
         System.out.println("Estado de serviço:");
         System.out.println("Estado de serviço de "+professor1.nome+": "+professor1.emservico());
         System.out.println("Estado de serviço de "+professor2.nome+": "+professor2.emservico());
-        System.out.println("Estado de serviço de "+professor3.nome+": "+professor3.emservico()+"\n");
+        System.out.println("Estado de serviço de "+professor3.nome+": "+professor3.emservico());
+        System.out.println("Estado de serviço de "+professor4.nome+": "+professor4.emservico()+"\n");
         
         //criação dos coordenadores
         coordenadores coord1 = new coordenadores("Ediney");
@@ -50,7 +52,7 @@ public class admescolar { //abstração
         //determinando qual coordenador atrasou a entrega de relatório
         coord2.setEntregarelatorio(true);
         
-        System.out.println("Estado das entregas de relatório");
+        System.out.println("Estado das entregas de relatórios");
         System.out.println("Estado da entrega de relatório "+coord1.nome+": "+coord1.relatorios());
         System.out.println("Estado da entrega de relatório "+coord2.nome+": "+coord2.relatorios());
         System.out.println("Estado da entrega de relatório "+coord3.nome+": "+coord3.relatorios()+"\n");

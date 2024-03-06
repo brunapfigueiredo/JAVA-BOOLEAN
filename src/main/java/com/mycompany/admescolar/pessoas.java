@@ -9,7 +9,7 @@ package com.mycompany.admescolar;
  * @author Admin
  */
 public class pessoas {
-    String idade;
+    String idade; 
     String nome;
     
     public pessoas (String nome) { //construtor
